@@ -44,7 +44,7 @@ describe('Valid Sticky', () => {
       top: 0,
       width: 100,
       position: 'fixed',
-      transform: 'translateZ(0)'
+      transform: [{translateZ: 0}]
     };
 
     let sticky;
@@ -115,7 +115,7 @@ describe('Valid Sticky', () => {
       expect(sticky.state).to.eql({
         isSticky: false,
         wasSticky: true,
-        style: { transform: 'translateZ(0)' },
+        style: { transform: [{translateZ: 0}] },
         distanceFromTop: 1,
         distanceFromBottom: 901,
         calculatedHeight: 100

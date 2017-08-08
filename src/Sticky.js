@@ -73,7 +73,7 @@ export default class Sticky extends Component {
     }
 
     if (!this.props.disableHardwareAcceleration) {
-      style.transform = 'translateZ(0)';
+      style.transform = [{translateZ: 0}];
     }
 
     this.setState({

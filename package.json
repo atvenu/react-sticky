@@ -8,8 +8,7 @@
     "compile": "babel src --loose --out-dir lib",
     "start": "webpack --watch",
     "prepublish": "npm run clean && npm run compile",
-    "test": "mocha test/setup.js test/spec/*.js",
-    "postInstall": "npm run compile"
+    "test": "mocha test/setup.js test/spec/*.js"
   },
   "repository": {
     "type": "git",
